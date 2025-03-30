@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sobollab2.GameClient">
+   <right>
+      <VBox fx:id="labelBox" alignment="TOP_CENTER" prefHeight="529.0" prefWidth="104.0" spacing="5.0" style="-fx-background-color: #232949;" BorderPane.alignment="CENTER">
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding></VBox>
+   </right>
+   <center>
+      <Pane fx:id="gamePane" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #E3E3E3;" BorderPane.alignment="CENTER">
+         <children>
+            <Line endX="-100.0" endY="366.5999755859375" layoutX="698.0" layoutY="183.0" startX="-100.0" startY="-183.0" />
+            <Line endX="-99.99996948242188" endY="386.5999755859375" layoutX="593.0" layoutY="163.0" startX="-99.99996948242188" startY="-163.0" />
+            <Circle fx:id="bigCircle" fill="#6c739c" layoutX="495.0" layoutY="278.0" radius="48.0" stroke="BLACK" strokeType="INSIDE" />
+            <Circle fx:id="smallCircle" fill="#6fa9f3" layoutX="599.0" layoutY="276.0" radius="27.0" stroke="BLACK" strokeType="INSIDE" />
+         </children></Pane>
+   </center>
+   <left>
+      <VBox fx:id="triangleBox" alignment="CENTER" prefHeight="529.0" prefWidth="68.0" spacing="10.0" style="-fx-background-color: #232949;" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin></VBox>
+   </left>
+   <bottom>
+      <HBox alignment="CENTER_LEFT" prefHeight="71.0" prefWidth="800.0" spacing="10.0" style="-fx-background-color: #232949;" BorderPane.alignment="CENTER">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onStartButtonClick" prefHeight="30.0" prefWidth="88.0" text="Готов" textFill="#202221">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></Button>
+            <Button mnemonicParsing="false" onAction="#onPauseButtonClick" prefHeight="30.0" prefWidth="80.0" text="Пауза" textFill="#202221" />
+            <Button mnemonicParsing="false" onAction="#onShootButtonClick" prefHeight="32.0" prefWidth="73.0" text="Выстрел" textFill="#2d2f2f" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
